@@ -1,0 +1,43 @@
+Workflow Overview
+
+The outer layer of the protocol converts an arbitrary Clifford + T circuit to a diagonal CNOT + T circuit plus additional operations that are all Clifford. The purpose of this is to isolate the non-Clifford behaviour within a subcircuit that has key properties required for our optimization framework (see section BLANG). The main obstacle to this conversion process is the presence of Hadamard gates in the original circuit. So called external Hadamards, found at the beginning and end of the circuit, can be left in place. In order to remove internal Hadamards we use an approach similar to that of CITE{MONTANARO}, CITE{OTHER ONE} where a unitary Hadamard gate is replaced with a Hadamard gadget (see figure BLINT) that involves only gates from the CNOT+T gate set as well as |+> state preparation and measurement in the Pauli-X basis. Effectively, we are trading internal Hadamards for external Hadamards and spacelike overhead.
+
+Once the Hadamards are removed, we decompose the CNOT+T circuit into two partitions such that one part consists of CNOT gates only and the other is diagonal. We then extract the signature tensor of the diagonal CNOT+T circuit, which is an object that uniquely characterizes the unitary that the diagonal CNOT+T circuit implements up to a Clifford factor. The core layer of the algorithm takes as input the signature tensor of the diagonal CNOT + T circuit and outputs a gate synthesis matrix, which represents a particular circuit decomposition for the input unitary. The number of columns of the gate synthesis matrix is equal to the T count of its corresponding circuit, so the core algorithm specifically outputs a gate synthesis matrix with near minimal column number. This is then mapped to a diagonal CNOT + T circuit, with which the original diagonal CNOT + T circuit is replaced. The result is an output circuit that implements the full Clifford + T circuit with near optimal T count.
+
+Diagonal CNOT+T Framework
+
+This section describes how we map the gate synthesis problem from the quantum circuit picture to an abstract mathematical picture involving binary tensors. We proceed by observing that the action of any $n$-qubit diagonal CNOT + T unitary U_f on a computational basis state |x> is given by
+U_f |x> = omega^f(x)|x>,
+where omega = e^{ipi/4}, and U_f is completely characterized by a polynomial f: Z_2^n -> Z_8, known as the phase function of U_f. A phase function can be decomposed into a sum of linear, quadratic and cubic monomials on the x_i where each monomial of order r has a coefficient in Z_8 and is weighted by a factor 2^{r-1}, as in the following:
+f(x) = agfdafd.
+In CITE{EARL} such decompositions of f are referred to as weighted polynomials and Campbell proved that any two unitaries whose weighted polynomial coefficients all have the same parity are Clifford equivalent. Note the weighted polynomial can be lifted directly from the circuit definition of U_f if we work in the basis {T, CS, CCZ} as each kind of gate corresponds to the linear, quadratic and cubic terms, respectively. We define the signature tensor,S in Z_2^(n,n,n), of U to be a tensor of order 3 whose elements are equal to the parity of the weighted polynomial coefficents of U according to the following relations:
+l_a (mod 2) = S_{sigma(a,a,a)} = S_{a,a,a}
+q_a,b (mod 2) = S_{sigma(a,b,b)} = S_{sigma(a,a,b)}
+c_a,b,c (mod 2) = S_{sigma(a,b,c)}
+for all sigma in S_3, the symmetric group on a set with 3 elements. It follows from this definition that any two unitaries with the same signature tensor are Clifford equivalent.
+
+We recall the definition of gate synthesis matrices from CITE{EARL}, where a matrix, A in Z_2^(n,m), is a gate synthesis matrix for a unitary U_f if it satisfies,
+f(x) = |A^Tx| (mod 8)
+where f is the phase function of U_f and |.| is the Hamming weight of a binary vector. An A matrix can be efficiently extracted from a diagonal CNOT + T circuit by tracking the action of each gate on the computational basis states through the circuit as shown in figure BALFDG. Conversely, given an A matrix there is a known polynomial time algorithm that generates a circuit that implements U_f using m T gates. The signature tensor of U_f can be determined from an A matrix of U_f using the following relation,
+<Signature tensor definition>
+
+We now have the necessary tools to define the gate synthesis problem in the binary tensor picture.
+Problem 1:
+Given a unitary U_f whose signature tensor is S, find an A matrix with minimal number of columns that satisfies equation (ABOVE).
+
+Note that pairs of identical columns and all-zero columns will never appear in an optimal A matrix as these have no effect on the signature tensor.
+
+T-Optimizer
+The T-Optimiser subroutine of our protocol finds a low rank decomposition of the signature tensor for our input quantum circuit in the form of an A matrix. It has been shown that this problem can be mapped in polynomial time to the minimum distance decoding problem of the punctured Reed-Muller code of order n-4 on n qubits, which is believed to be hard CITE(AMY MOSCA REED_MULLER PAPER). This imposed a practical upper bound on the number of qubits n_RM over which circuits can be optimally synthesized with respect to T count. Using our own implementation of the brute force decoder written by the authors, we have found this limit to be n_RM = 6. To gain insight into the complexity of the problem, consider the following. The number of codespace generators for RM*(n-4, n) is equal to N_G = sum_(r=1)^(n-4)n!/r!(n-r)!. Therefore the size of the search space is N_{search} = 2^N_G. On a processor with a clock speed of 3.20GHz, assuming we can check one codeword per clock cycle, it would take over 91 years to exhaustively search this space and therefore determine optimality for a general CNOT+T circuit for n=7. It would take ~6*10^31 years for n=8. Clearly, we need develop heuristics for this problem.
+
+Recursive Expansion (RE)
+The simplest means of efficiently obtaining an A matrix for a given signature tensor S is to make use of the modulo identity 2ab = a + b - a^b. This is applied recursively to each non-linear term in the weighted polynomial associated with S to yield a decomposition of the form in equation (gate synth matrix eq). We call this the recursive expansion (RE) algorithm, which has been shown to yield worst-case T counts of O(n^3).
+
+Temporary Order Reduction (TOR)/Zither Decomposition (ZD)
+An efficient heuristic that requires only O(n^2) T gates was proposed in CITE(EARL), which involves breaking down an input CNOT + T circuit into a sequence of control-U operators where each successive operator acts on fewer qubits than the previous, eventually allowing the optimal Reed-Muller decoder to be used when n<=n_RM for a particular control_U. Each target U corresponds to a weighted polynomial with only up to quadratic terms, and the control qubit maps to a particular variable in the weighted polynomial that has been factorized out from all terms in which it appears. The reduction in order from a cubic to a quadratic weighted polynomial allows for optimal solutions for each target U to be found efficiently using Lempel's matrix factoring algorithm CITE(Lempel). Additional steps are required to obtain a decomposition of the form REF(GSM eq) from the control-(optimized U) sequence, which leads to sub-optimality in the general case but with T counts that scale as O(n^2). This algorithm we refer to as the temporary order reduction (TOR) algorithm (TOR) efficiently yields optimal T counts for the special case where every gate in the CNOT + T circuit shares a control.
+
+There are two versions of TOR: with and without feedback. This refers to whether or not extra terms that do not depend on the control qubit of the current iteration are immediately synthesized after calling Lempel's algorithm or if they are fed back into the input signature tensor to be synthesized in the subsequent step.
+
+Third Order Duplicate-then-Destroy (TODD)
+(algorithm figure from poster)
+(explanation from poster)

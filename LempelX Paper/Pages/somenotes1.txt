@@ -1,0 +1,10 @@
+THIRD ORDER DUPLICATE...
+"the key result of this report" -> "yields lowest T count solutions to problem 1 known so far"
+
+2.2
+equation 6, matrix multiplication is evaluated mod 2.
+
+TODD
+
+Explain RM decoder more?
+Explain TOR more?/

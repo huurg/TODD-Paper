@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+
+\bibitem{6_Amy_2013}
+M.~Amy, D.~Maslov, and M.~Mosca.
+\newblock Polynomial-time {T}-depth optimization of {Clifford}+{T} circuits via
+  matroid partitioning.
+\newblock {\em IEEE Transactions on Computer-Aided Design of Integrated
+  Circuits and Systems}, 33(10):1476--1489, Oct 2014.
+
+\bibitem{5_Amy_2013}
+M.~Amy, D.~Maslov, M.~Mosca, and M.~Roetteler.
+\newblock A meet-in-the-middle algorithm for fast synthesis of depth-optimal
+  quantum circuits.
+\newblock {\em IEEE Transactions on Computer-Aided Design of Integrated
+  Circuits and Systems}, 32(6):818--830, June 2013.
+
+\bibitem{3_Amy_2016}
+M.~Amy and M.~Mosca.
+\newblock T-count optimization and {Reed}-{Muller} codes.
+\newblock {\em arXiv}, arXiv:1601.07363v1 [quant-ph], 2016.
+
+\bibitem{2_Bremner_2010}
+M.~J. Bremner, R.~Jozsa, and D.~J. Shepherd.
+\newblock Classical simulation of commuting quantum computations implies
+  collapse of the polynomial hierarchy.
+\newblock {\em Proceedings of the Royal Society of London A: Mathematical,
+  Physical and Engineering Sciences}, 2010.
+
+\bibitem{4_Campbell_2017}
+E.~T. Campbell and M.~Howard.
+\newblock {Unified framework for magic state distillation and multiqubit gate
+  synthesis with reduced resource cost}.
+\newblock {\em Phys. Rev. A}, 95(022316), 2017.
+
+\bibitem{8_Lempel_1975}
+A.~Lempel.
+\newblock Matrix factorization over {GF(2)} and trace-orthogonal bases of
+  {GF(2)}.
+\newblock {\em SIAM J. Comput.}, 4(2), 1975.
+
+\bibitem{1_Montanaro_2017}
+A.~Montanaro.
+\newblock Quantum circuits and low-degree polynomials over
+  {${{\mathbb{F}}_\mathsf{2}}$}.
+\newblock {\em Journal of Physics A: Mathematical and Theoretical},
+  50(8):084002, 2017.
+
+\bibitem{41_soeken}
+M.~Soeken, M.~Roetteler, N.~Wiebe, and G.~D. Micheli.
+\newblock Logic synthesis for quantum computing.
+\newblock {\em arXiv preprint}, arXiv:1706.02721, 2017.
+
+\end{thebibliography}

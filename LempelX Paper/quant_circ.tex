@@ -1,0 +1,128 @@
+\documentclass{article}
+
+\usepackage[braket, qm]{qcircuit}
+\usepackage{lscape}
+\usepackage[margin=7cm]{geometry}
+\usepackage{amsmath}
+
+\usepackage{algorithm,caption}
+\usepackage{placeins}
+\usepackage[noend]{algpseudocode}
+%\usepackage[noend]{algorithmic}
+\usepackage{amsfonts}
+%\algsetup{indent=2em} 
+%\renewcommand{\algorithmiccomment}[1]{\hspace{2em}// #1} 
+\makeatletter
+% Reinsert missing \algbackskip
+\def\algbackskip{\hskip-\ALG@thistlm}
+\makeatother
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+	%\begin{landscape}
+	
+	\[
+		\Qcircuit @C=1em @R=0.7em {
+			\lstick{\ket{x_1}} & \gate{T} & \targ &  \gate{T} &  \qw & \qw & \targ & \gate{T} & \ctrl{1} & \qw & \qw & \ctrl{1} & \qw & \targ & \qw & \targ & \qw \\
+			\lstick{\ket{x_2}} & \qw & \ctrl{-1} & \gate{T^\dagger} & \ctrl{1} & \qw & \qw & \qw & \targ & \gate{T^\dagger} & \gate{Z} & \targ & \gate{T} & \qw & \ctrl{1} & \ctrl{-1} & \qw \\
+			\lstick{\ket{x_3}} & \qw & \qw & \qw & \targ & \gate{S} & \ctrl{-2} & \qw & \qw & \qw & \qw & \qw & \qw & \ctrl{-2} & \targ & \qw & \qw\\
+		}
+	\]
+	
+	\[
+	f(\mathbf{x}) = x_1 + (x_1\oplus x_2) - x_2 + 2(x_2 \oplus x_3) + (x_1 \oplus x_3) - (x_1 \oplus x_2 \oplus x_3) + 4(x_1 \oplus x_2 \oplus x_3) + x_2 
+	\]
+	
+	\[
+	f(\mathbf{x}) = x_1 + (x_1\oplus x_2) + 2(x_2 \oplus x_3) + (x_1 \oplus x_3) + 3(x_1 \oplus x_2 \oplus x_3)
+	\]
+	
+	\[
+	\begin{matrix}
+	x_1 \\
+	x_2 \\
+	x_3 \\
+	x_1 \oplus x_2 \\
+	x_2 \oplus x_3 \\
+	x_1 \oplus x_3 \\
+	x_1 \oplus x_2 \oplus x_3
+	\end{matrix}
+	\]
+	\Large
+	\[
+	A = \begin{pmatrix}
+	1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 \\
+	0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 \\
+	0 & 0 & 1 & 1 & 1 & 1 & 1 & 1
+	\end{pmatrix}
+	\]
+	\[
+	A = \begin{pmatrix}
+	1 & 1 & 1 & 1 \\
+	0 & 1 & 1 & 0 \\
+	0 & 0 & 1 & 1
+	\end{pmatrix}
+	\]
+	
+	\begin{algorithm}			
+		\caption*{Extended Lempel Algorithm}
+		%\label{al_1}
+		\textbf{Input:} Gate synthesis matrix $A\in \mathbb{Z}_2^{(n,m)}$. \\
+		\textbf{Output:} Gate synthesis matrix $A^\prime \in \mathbb{Z}_2^{(n,m^\prime)}$ such that $m^\prime \leq m$ and $S^{(A^\prime)}=S^{(A)}$.
+		\footnotesize
+		\begin{itemize}
+			\item Let $\mathrm{col}_j(A)$ be a function that returns the $j^{\text{th}}$ column of $A$.
+			\item Let $\text{cols}(A)$ be a function that returns the number of columns of $A$.
+			\item Let $\text{nullspace}(A)$ be a function that returns a matrix whose columns generate the right nullspace of A.
+			\item Let $\mathrm{simplify(A)}$ be a function that removes every pair of identical columns and every all-zero column from $A$.
+		\end{itemize}
+		\normalsize
+		%\\Let $\text{col}_j(A)$ denote the $j^{\text{th}}$ column of $A$.
+		\begin{algorithmic}			
+			\Procedure{LempelX}{}
+			\State{Initialize $A^\prime \leftarrow A$}
+			\BState \emph{start}:
+			\ForAll{$1\leq a < b \leq \mathrm{cols}(A^\prime)$}
+			%\State{\emph{Iterate over all column pairs.}}
+			\State{$\mathbf{z}\leftarrow \text{col}_a(A^\prime) + \text{col}_b(A^\prime)$}
+			\State{$\tilde{A}\leftarrow \begin{pmatrix}
+				A^\prime \\%\hline			
+				\chi(A^\prime,\mathbf{z})
+				\end{pmatrix}$}
+			\State{$N\leftarrow \text{nullspace}(\tilde{A})$}			
+			\ForAll{$1 \leq k \leq \text{cols}(N)$}
+			\State{$\mathbf{y}\leftarrow\text{col}_k(N)$}
+			\If{$y_a\oplus y_b=1$}
+			%\State{\emph{At least one column can be eliminated.}}
+			\If{$|\mathbf{y}|=1 \pmod 2$}
+			%\State{\emph{Force $y$ to be even weight and adjust width of $A^\prime$.}}
+			\State{$A^\prime \leftarrow \begin{pmatrix}
+				A^\prime & \mathbf{0}
+				\end{pmatrix}$}
+			\State{$\mathbf{y}\leftarrow \begin{pmatrix}
+				\mathbf{y} \\
+				1
+				\end{pmatrix}$}					
+			\EndIf
+			\State{$A^\prime \leftarrow A^\prime + \mathbf{z}\mathbf{y}^T$}
+			\State{$\mathrm{simplify(A^\prime)}$}
+			\State{\textbf{goto} \emph{start}}
+			\EndIf
+			\EndFor
+			\EndFor
+			\EndProcedure			
+		\end{algorithmic}
+	\end{algorithm}
+
+	\begin{equation}
+		\chi(A,x) = \begin{pmatrix}
+		(x_1\mathbf{r_2}\wedge\mathbf{r_3})\oplus (x_2\mathbf{r_3}\wedge\mathbf{r_1})\oplus (x_3\mathbf{r_1}\wedge\mathbf{r_2})\\
+		(x_1\mathbf{r_2}\wedge\mathbf{r_4})\oplus (x_2\mathbf{r_4}\wedge\mathbf{r_1})\oplus (x_4\mathbf{r_1}\wedge\mathbf{r_2})\\
+		\vdots \\
+		(x_{n-2}\mathbf{r_{n-1}}\wedge\mathbf{r_{n}})\oplus (x_{n-1}\mathbf{r_{n}}\wedge\mathbf{r_{n-2}})\oplus (x_{n}\mathbf{r_{n-2}}\wedge\mathbf{r_{n-1}})\\
+		\end{pmatrix},
+	\end{equation}
+	where $\mathbf{r_i}$ is the $i^{\text{th}}$ row of $A$.
+	
+	%\end{landscape}
+\end{document}
