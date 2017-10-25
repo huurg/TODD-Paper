@@ -1,0 +1,35 @@
+%! \usepackage{amsmath}
+\providecommand{\ket}[1]{\left|#1\right\rangle}
+\begin{tikzpicture}[scale=1.500000,x=1pt,y=1pt]
+\filldraw[color=white] (0.000000, -7.500000) rectangle (62.000000, 82.500000);
+% Drawing wires
+% Line 4: x1 W \ket{x_1}
+\draw[color=black] (0.000000,75.000000) -- (62.000000,75.000000);
+\draw[color=black] (0.000000,75.000000) node[left] {$\ket{x_1}$};
+% Line 5: x2 W \ket{x_2}
+\draw[color=black] (0.000000,60.000000) -- (62.000000,60.000000);
+\draw[color=black] (0.000000,60.000000) node[left] {$\ket{x_2}$};
+% Line 6: x3 W \ket{x_3}
+\draw[color=black] (0.000000,45.000000) -- (62.000000,45.000000);
+\draw[color=black] (0.000000,45.000000) node[left] {$\ket{x_3}$};
+% Line 7: x4 W \ket{x_4}
+\draw[color=black] (0.000000,30.000000) -- (62.000000,30.000000);
+\draw[color=black] (0.000000,30.000000) node[left] {$\ket{x_4}$};
+% Line 8: ... W
+\draw[color=black] (0.000000,15.000000) node[anchor=mid east] {$\vdots$};
+% Line 9: xn W \ket{x_n}
+\draw[color=black] (0.000000,0.000000) -- (62.000000,0.000000);
+\draw[color=black] (0.000000,0.000000) node[left] {$\ket{x_n}$};
+% Done with wires; drawing gates
+% Line 11: x1 x2 x3 x4 xn G $U_f$  width=50
+\draw (31.000000,75.000000) -- (31.000000,0.000000);
+\begin{scope}
+\draw[fill=white] (31.000000, 37.500000) +(-45.000000:35.355339pt and 61.518290pt) -- +(45.000000:35.355339pt and 61.518290pt) -- +(135.000000:35.355339pt and 61.518290pt) -- +(225.000000:35.355339pt and 61.518290pt) -- cycle;
+\clip (31.000000, 37.500000) +(-45.000000:35.355339pt and 61.518290pt) -- +(45.000000:35.355339pt and 61.518290pt) -- +(135.000000:35.355339pt and 61.518290pt) -- +(225.000000:35.355339pt and 61.518290pt) -- cycle;
+\draw (31.000000, 37.500000) node {$U_f$};
+\end{scope}
+% Done with gates; drawing ending labels
+\draw[color=black] (62.000000,15.000000) node[anchor=mid west] {$\vdots$};
+% Done with ending labels; drawing cut lines and comments
+% Done with comments
+\end{tikzpicture}

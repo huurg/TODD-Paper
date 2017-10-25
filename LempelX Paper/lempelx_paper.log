@@ -1,11 +1,12 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.7.3)  11 OCT 2017 20:38
-**lempelx_paper.tex
-(./lempelx_paper.tex
-LaTeX2e <2015/10/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 69 languages loaded.
-("F:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls"
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  24 OCT 2017 17:51
+entering extended mode
+**./lempelx_paper.tex
+(lempelx_paper.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("F:/Program Files/MiKTeX 2.9/tex/latex/base/size10.clo"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -20,22 +21,21 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/graphics/keyval.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty"
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("F:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -51,42 +51,42 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.cfg"))
-("F:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty"
-Package: amsmath 2013/01/14 v2.14 AMS math features
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("F:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty"
-Package: amstext 2000/06/29 v2.01
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen111
 ))
-("F:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen112
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty"
-Package: amsopn 1999/12/14 v2.01 operator names
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count90
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count91
 \leftroot@=\count92
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count93
 \DOTSCASE@=\count94
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen113
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count95
 \c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
@@ -107,20 +107,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/tools/tabularx.sty"
-Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/tools/array.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen120
 \extrarowheight=\dimen121
@@ -136,7 +136,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@cols=\count102
 \TX@ftn=\toks22
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/amscls/amsthm.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -147,14 +147,13 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@postskip=\skip49
 \thm@headsep=\skip50
 \dth@everypar=\toks28
-)
-("F:/Program Files/MiKTeX 2.9/tex/latex/qcircuit/qcircuit.sty"
-Package: qcircuit 2014/06/29
-
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xy.sty"
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xy.tex" Bootstrap'ing:
-catcodes, docmode, ("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xyrecat.tex"
-) ("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xyidioms.tex")
+) (qcircuit.sty
+Package: qcircuit 2016/12/29
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xy.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xy.tex" Bootstrap'ing:
+catcodes, docmode,
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyrecat.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyidioms.tex")
 
  Xy-pic version 3.8.9 <2013/10/06>
  Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
@@ -211,9 +210,9 @@ kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
 Package: xy 2013/10/06 Xy-pic version 3.8.9
 
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xypdf.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xypdf.tex"
  Xy-pic option: PDF driver v.1.7 loaded))
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xymatrix.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xymatrix.tex"
  Xy-pic option: Matrix feature v.3.14
 \Row=\count107
 \Col=\count108
@@ -223,11 +222,11 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 \qcount@@=\count110
 \matrixsize@=\count111
  loaded)
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xyframe.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyframe.tex"
  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
 Xy-pic pdf driver: `frame' extension support
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xypdf-fr.tex"
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xycurve.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xypdf-fr.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xycurve.tex"
  Xy-pic option: Curve and Spline extension v.3.12 curve,
 \crv@cnt@=\count112
 \crvpts@=\toks35
@@ -240,13 +239,13 @@ Xy-pic pdf driver: `frame' extension support
 \L@=\dimen159
  loaded)
 Xy-pic pdf driver: `curve' extension support
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xypdf-cu.tex" loaded) loaded)
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xyarrow.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xypdf-cu.tex" loaded)
+loaded) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyarrow.tex"
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-("F:/Program Files/MiKTeX 2.9/tex/generic/xypic/xyarc.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyarc.tex"
  Xy-pic option: Circle, Ellipse, Arc feature v.3.8 circles, ellipses,
 elliptical arcs, loaded))
-("F:/Program Files/MiKTeX 2.9/tex/latex/listings/listings.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count113
 \lst@gtempboxa=\box32
 \lst@token=\toks36
@@ -260,23 +259,23 @@ elliptical arcs, loaded))
 \lst@lineno=\count118
 \lst@maxwidth=\dimen163
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/listings/lstmisc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count119
 \lst@skipnumbers=\count120
 \lst@framebox=\box33
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/listings/listings.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/caption/caption.sty"
-Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/caption/caption3.sty"
-Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen164
 \captionmargin@=\dimen165
 \captionwidth=\dimen166
@@ -288,44 +287,44 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count121
 Package caption Info: listings package is loaded.
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/caption/subcaption.sty"
-Package: subcaption 2015/09/15 v1.1-100 Sub-captions (AR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count122
 \c@subtable=\count123
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty"
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/00miktex/graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/pdftex-def/pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty"
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count124
 ))
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/algorithms/algorithm.sty"
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environ
-ment
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count125
 \float@exts=\toks37
@@ -333,19 +332,19 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks38
 \@floatcapt=\box35
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/base/ifthen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks39
 \c@algorithm=\count126
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/placeins/placeins.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
 Package: placeins 2005/04/18  v 2.2
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/algorithmicx/algpseudocode.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
 Package: algpseudocode 
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/algorithmicx/algorithmicx.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -372,10 +371,10 @@ Package amsthm Warning: Unknown theoremstyle `problem' on input line 29.
 Package amsthm Warning: Unknown theoremstyle `lemma' on input line 32.
 
 \c@lemma=\count136
-("F:/Program Files/MiKTeX 2.9/tex/latex/pdfpages/pdfpages.sty"
-Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
+(C:\Users\php16leh\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
+Package: pdfpages 2017/08/14 v0.5k Insert pages of external PDF documents (AM)
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/tools/calc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count137
 \calc@Bcount=\count138
@@ -388,117 +387,46 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count139
 \calc@Cskip=\skip56
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/eso-pic/eso-pic.sty"
+(C:\Users\php16leh\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/atbegshi.sty"
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 )
-("F:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty"
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+(C:\Users\php16leh\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/00miktex/color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
 \AM@pagewidth=\dimen175
 \AM@pageheight=\dimen176
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/pdfpages/ppluatex.def"
-File: ppluatex.def 2015/09/18 v0.5d Pdfpages driver for LuaTeX (AM)
+(C:\Users\php16leh\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
+File: pppdftex.def 2017/08/14 v0.5k Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box36
-\AM@toc@title=\toks40
+\AM@global@opts=\toks40
+\AM@toc@title=\toks41
 \c@AM@survey=\count140
 \AM@templatesizebox=\box37
-)
-("F:/Program Files/MiKTeX 2.9/tex/latex/epspdfconversion/epspdfconversion.sty"
-Package: epspdfconversion 2010/06/01 v0.61 Conversion eps->pdf with epspdf-tools
- on the fly
-
-("F:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty"
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-("F:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty"
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvdefinekeys.sty"
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-("F:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty"
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvsetkeys.sty"
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty"
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty"
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX detected.
-))))
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty"
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
-
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-
-("F:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/luatex-loader.sty"
-Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
-
-(F:/Program Files/MiKTeX 2.9/scripts/oberdiek/oberdiek.luatex.lua))
-\pdftexcmds@toks=\toks41
-)
-
-Package epstopdf Warning: Shell escape feature is not enabled.
-
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.tif,.jpeg,.PNG,.PDF,.JPG,.JPEG,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-)
-
-epspdfconversion.sty is using epstopdf.sty with the following setup:
-    update=true,
-    verbose=true,
-    prefersuffix=true,
-    suffix=-epspdf-to,
-    option outdir not set. Default: same directory as the .eps-source-file
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.tif,.jpeg,.PNG,.PDF,.JPG,.JPEG,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 319.
-    append,
-    enable
-epspdf is used with the following command:
-    epspdf <file> 
-Package epspdfconversion Info: 
-(epspdfconversion)             epspdf <file> is used to convert eps->pdf 
-(epspdfconversion)             (not epstopdf (script))
-(epspdfconversion)              on input line 334.
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 34
-7.
-support for pdf-to-pdf is DISABLED
-
-support for ps-to-pdf is DISABLED
-
-) ("F:/Program Files/MiKTeX 2.9/tex/latex/colortbl/colortbl.sty"
+) (C:\Users\php16leh\AppData\Roaming\MiKTeX\2.9\tex\latex\colortbl\colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks42
 \minrowclearance=\skip57
-)
-(./lempelx_paper.aux)
-\openout1 = lempelx_paper.aux
+) (lempelx_paper.aux)
+\openout1 = `lempelx_paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
 LaTeX Font Info:    ... okay on input line 43.
@@ -548,12 +476,12 @@ LaTeX Font Info:    ... okay on input line 43.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 43.
-("F:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package xypdf Info: Line width: 0.39998pt on input line 43.
@@ -562,7 +490,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("F:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count142
 \scratchdimen=\dimen177
@@ -575,110 +503,171 @@ Package caption Info: End \AtBeginDocument code.
 \MPnumerator=\count146
 \makeMPintoPDFobject=\count147
 \everyMPtoPDFconversion=\toks44
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box39
- ("F:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/pdflscape.sty"
-Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
-("F:/Program Files/MiKTeX 2.9/tex/latex/graphics/lscape.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) [1
 
-{C:/Users/Luke Heyfron/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [1]
-<Overview3.pdf, id=11, 473.77pt x 218.56656pt>
+{C:/Users/php16leh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<Overview3.pdf, id=12, 473.77pt x 218.56656pt>
 File: Overview3.pdf Graphic file (type pdf)
  <use Overview3.pdf>
-Package pdftex.def Info: Overview3.pdf used on input line 104.
+Package pdftex.def Info: Overview3.pdf used on input line 117.
 (pdftex.def)             Requested size: 473.76884pt x 218.56602pt.
- <xymatrix
-12x2 859>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<xymatrix 22x2 1822>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1<./Overview3.pdf>]
+[2] [3 <./Overview3.pdf>]
 
-Package amsthm Warning: Unknown theoremstyle `problem' on input line 153.
-
-[2] [3]
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 222.
+Package amsthm Warning: Unknown theoremstyle `problem' on input line 198.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 227.
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 239.
+
+[4] [5] <TORfig3.pdf, id=110, 845.04686pt x 597.50786pt>
+File: TORfig3.pdf Graphic file (type pdf)
+ <use TORfig3.pdf>
+Package pdftex.def Info: TORfig3.pdf used on input line 326.
+(pdftex.def)             Requested size: 475.45825pt x 336.1794pt.
+
+[6] [7 <./TORfig3.pdf>]
+
+Package amsthm Warning: Unknown theoremstyle `Lemma' on input line 341.
 
 
-Package amsthm Warning: Unknown theoremstyle `lemma' on input line 238.
+Package amsthm Warning: Unknown theoremstyle `lemma' on input line 372.
+
+[8]
+
+Package amsthm Warning: Unknown theoremstyle `lemma' on input line 410.
 
 
-Package amsthm Warning: Unknown theoremstyle `lemma' on input line 271.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 423.
 
-[4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 313.
- ("F:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd"
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 428.
+
+[9]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 470.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 313.
- [5]
-<random_benchmark.pdf, id=122, 597.23125pt x 845.1575pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 470.
+
+<random_benchmark.pdf, id=134, 597.23125pt x 845.1575pt>
 File: random_benchmark.pdf Graphic file (type pdf)
 
 <use random_benchmark.pdf>
-Package pdftex.def Info: random_benchmark.pdf used on input line 366.
+Package pdftex.def Info: random_benchmark.pdf used on input line 523.
 (pdftex.def)             Requested size: 250.24199pt x 170.34445pt.
 
 
-LaTeX Warning: Citation `42_montanaro' on page 6 undefined on input line 376.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `42_montanaro' on page 6 undefined on input line 376.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./lempelx_paper.bbl [6<./random_benchmark.pdf>]) [7] (./lempelx_paper.aux)
-
-LaTeX Warning: There were undefined references.
-
-)
-
-Here is how much of LuaTeX's memory you used:
- 10186 strings out of 494933
- 100000,319454 words of node,token memory allocated
- 1770 words of node memory still in use:
-    nodes
-   avail lists: 1:1,2:36,3:252,4:1748,5:407,6:4301,7:327,9:516,10:390
- 13349 multiletter control sequences out of 65536+200000
- 73 fonts using 2878511 bytes
- 42i,21n,43p,1428b,1189s stack positions out of 5000i,500n,10000p,200000b,50000s
-<<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><<F:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><<F:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><<F:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><<F:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmbx8.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbxti10.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmcsc10.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
-<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><<F:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><<F:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><<F:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><<F:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr17.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr5.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
-.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><<F:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><<F:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><<F:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><<F:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy5.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsy7.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmti10.pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.
-pfb><<F:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on lempelx_paper.pdf (9 pages, 700946 bytes).
-
-PDF statistics: 225 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 131072)
- 7 words of extra memory for PDF output out of 10000 (max. 10000000)
+[10] (lempelx_paper.bbl [11 <./random_benchmark.pdf>] [12]) [13]
+(lempelx_paper.aux) ) 
+Here is how much of TeX's memory you used:
+ 9757 strings out of 493334
+ 135866 string characters out of 3136663
+ 307432 words of memory out of 3000000
+ 13101 multiletter control sequences out of 15000+200000
+ 17194 words of font info for 65 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,25n,57p,1505b,1195s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+bx8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb>
+Output written on lempelx_paper.pdf (13 pages, 828668 bytes).
+PDF statistics:
+ 249 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 22 words of extra memory for PDF output out of 10000 (max. 10000000)
 

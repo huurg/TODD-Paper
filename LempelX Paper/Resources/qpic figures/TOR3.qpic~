@@ -1,0 +1,17 @@
+SCALE 1.2
+HEADER \usepackage{amsmath}
+HEADER \usepackage{braket}
+x1 W \ket{x_1}
+x2 W \ket{x_2}
+x3 W \ket{x_3}
+x4 W \ket{x_4}
+... W
+xn W \ket{x_n}
+
+x2 x3 x4 xn G {$U_{\mathrm{OPT}(\tilde{f}_1)}$} x1 width=40
+x1 G $T^{l_1}$ width=15
+x1 x2 x3 x4 xn @ 2 color=green!50!black style=solid
+@ 2 color=green!50!black %% $U_{f\star x_1}$
+CUT 2
+x2 x3 x4 xn TOUCH
+x2 x3 x4 xn G $U_{f\star \bar{x}_1}$ width=30

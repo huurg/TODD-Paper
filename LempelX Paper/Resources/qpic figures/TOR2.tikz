@@ -1,0 +1,58 @@
+%! \usepackage{amsmath}
+%! \usepackage{braket}
+%! \usetikzlibrary{decorations.pathreplacing,decorations.pathmorphing}
+\begin{tikzpicture}[scale=1.500000,x=1pt,y=1pt]
+\filldraw[color=white] (0.000000, -7.500000) rectangle (121.000000, 82.500000);
+% Drawing wires
+% Line 4: x1 W \ket{x_1}
+\draw[color=black] (0.000000,75.000000) -- (121.000000,75.000000);
+\draw[color=black] (0.000000,75.000000) node[left] {$\ket{x_1}$};
+% Line 5: x2 W \ket{x_2}
+\draw[color=black] (0.000000,60.000000) -- (121.000000,60.000000);
+\draw[color=black] (0.000000,60.000000) node[left] {$\ket{x_2}$};
+% Line 6: x3 W \ket{x_3}
+\draw[color=black] (0.000000,45.000000) -- (121.000000,45.000000);
+\draw[color=black] (0.000000,45.000000) node[left] {$\ket{x_3}$};
+% Line 7: x4 W \ket{x_4}
+\draw[color=black] (0.000000,30.000000) -- (121.000000,30.000000);
+\draw[color=black] (0.000000,30.000000) node[left] {$\ket{x_4}$};
+% Line 8: ... W
+\draw[color=black] (0.000000,15.000000) node[anchor=mid east] {$\vdots$};
+% Line 9: xn W \ket{x_n}
+\draw[color=black] (0.000000,0.000000) -- (121.000000,0.000000);
+\draw[color=black] (0.000000,0.000000) node[left] {$\ket{x_n}$};
+% Done with wires; drawing gates
+% Line 11: x2 x3 x4 xn G $U_{\tilde{f}_1}$ x1 width=30
+\draw (21.000000,75.000000) -- (21.000000,0.000000);
+\begin{scope}
+\draw[fill=white] (21.000000, 30.000000) +(-45.000000:21.213203pt and 50.911688pt) -- +(45.000000:21.213203pt and 50.911688pt) -- +(135.000000:21.213203pt and 50.911688pt) -- +(225.000000:21.213203pt and 50.911688pt) -- cycle;
+\clip (21.000000, 30.000000) +(-45.000000:21.213203pt and 50.911688pt) -- +(45.000000:21.213203pt and 50.911688pt) -- +(135.000000:21.213203pt and 50.911688pt) -- +(225.000000:21.213203pt and 50.911688pt) -- cycle;
+\draw (21.000000, 30.000000) node {$U_{\tilde{f}_1}$};
+\end{scope}
+\filldraw (21.000000, 75.000000) circle(1.500000pt);
+% Line 12: x1 G $T^{l_1}$ width=15
+\begin{scope}
+\draw[fill=white] (55.500000, 75.000000) +(-45.000000:10.606602pt and 8.485281pt) -- +(45.000000:10.606602pt and 8.485281pt) -- +(135.000000:10.606602pt and 8.485281pt) -- +(225.000000:10.606602pt and 8.485281pt) -- cycle;
+\clip (55.500000, 75.000000) +(-45.000000:10.606602pt and 8.485281pt) -- +(45.000000:10.606602pt and 8.485281pt) -- +(135.000000:10.606602pt and 8.485281pt) -- +(225.000000:10.606602pt and 8.485281pt) -- cycle;
+\draw (55.500000, 75.000000) node {$T^{l_1}$};
+\end{scope}
+% Line 16: x2 x3 x4 xn TOUCH
+% Line 17: x2 x3 x4 xn G $U_{f\star \bar{x}_1}$ width=40
+\draw (95.000000,60.000000) -- (95.000000,0.000000);
+\begin{scope}
+\draw[fill=white] (95.000000, 30.000000) +(-45.000000:28.284271pt and 50.911688pt) -- +(45.000000:28.284271pt and 50.911688pt) -- +(135.000000:28.284271pt and 50.911688pt) -- +(225.000000:28.284271pt and 50.911688pt) -- cycle;
+\clip (95.000000, 30.000000) +(-45.000000:28.284271pt and 50.911688pt) -- +(45.000000:28.284271pt and 50.911688pt) -- +(135.000000:28.284271pt and 50.911688pt) -- +(225.000000:28.284271pt and 50.911688pt) -- cycle;
+\draw (95.000000, 30.000000) node {$U_{f\star \bar{x}_1}$};
+\end{scope}
+% Done with gates; drawing ending labels
+\draw[color=black] (121.000000,15.000000) node[anchor=mid west] {$\vdots$};
+% Done with ending labels; drawing cut lines and comments
+\draw[dashed] (69.000000, -7.500000) -- (69.000000, 82.500000);
+% Line 13: x1 x2 x3 x4 xn @ 2 color=black style=dotted
+\draw[draw opacity=1.000000,fill opacity=0.200000,color=black,dotted] (3.000000,82.500000) rectangle (66.000000,-7.500000);
+\draw[draw opacity=1.000000,fill opacity=0.200000,color=black,dotted] (3.000000,82.500000) rectangle (66.000000,-7.500000);
+% Line 14: @ 2 %% $U_{f\star x_1}$
+\draw[decorate,decoration={brace,mirror,amplitude = 4.000000pt},very thick] (3.000000,-7.500000) -- (66.000000,-7.500000);
+\draw (34.500000, -11.500000) node[text width=144pt,below,text centered] {$U_{f\star x_1}$};
+% Done with comments
+\end{tikzpicture}

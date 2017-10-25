@@ -1,0 +1,11 @@
+SCALE 0.9
+HEADER \usepackage{amsmath}
+PREAMBLE \providecommand{\ket}[1]{\left|#1\right\rangle}
+x1 W \ket{x_1}
+x2 W \ket{x_2}
+x3 W \ket{x_3}
+x4 W \ket{x_4}
+... W
+xn W \ket{x_n}
+
+x1 x2 x3 x4 xn G $U_f$  width=90
