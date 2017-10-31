@@ -138,6 +138,14 @@ A.~Lempel, ``Matrix factorization over gf(2) and trace-orthogonal bases of
   gf(2\^{}n),'' \emph{SIAM Journal on Computing}, vol.~4, no.~2, pp. 175--186,
   1975.
 
+\bibitem{PhysRevA.52.3457}
+\BIBentryALTinterwordspacing
+A.~Barenco, C.~H. Bennett, R.~Cleve, D.~P. DiVincenzo, N.~Margolus, P.~Shor,
+  T.~Sleator, J.~A. Smolin, and H.~Weinfurter, ``Elementary gates for quantum
+  computation,'' \emph{Phys. Rev. A}, vol.~52, pp. 3457--3467, Nov 1995.
+  [Online]. Available: \url{https://link.aps.org/doi/10.1103/PhysRevA.52.3457}
+\BIBentrySTDinterwordspacing
+
 \bibitem{1_Montanaro_2017}
 \BIBentryALTinterwordspacing
 A.~Montanaro, ``Quantum circuits and low-degree polynomials over

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  24 OCT 2017 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  31 OCT 2017 16:14
 entering extended mode
 **./lempelx_paper.tex
 (lempelx_paper.tex
@@ -364,11 +364,11 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 \c@definition=\count134
 
 
-Package amsthm Warning: Unknown theoremstyle `problem' on input line 29.
+Package amsthm Warning: Unknown theoremstyle `problem' on input line 34.
 
 \c@problem=\count135
 
-Package amsthm Warning: Unknown theoremstyle `lemma' on input line 32.
+Package amsthm Warning: Unknown theoremstyle `lemma' on input line 37.
 
 \c@lemma=\count136
 (C:\Users\php16leh\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
@@ -425,21 +425,29 @@ File: pppdftex.def 2017/08/14 v0.5k Pdfpages driver for pdfTeX (AM)
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks42
 \minrowclearance=\skip57
-) (lempelx_paper.aux)
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen177
+\WF@size=\dimen178
+\c@WF@wrappedlines=\count141
+\WF@box=\box38
+\WF@everypar=\toks43
+Package: wrapfig 2003/01/31  v 3.6
+)
+(lempelx_paper.aux)
 \openout1 = `lempelx_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -475,34 +483,35 @@ LaTeX Font Info:    ... okay on input line 43.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.39998pt on input line 43.
-\c@lstlisting=\count141
+Package xypdf Info: Line width: 0.39998pt on input line 49.
+\c@lstlisting=\count142
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
-\scratchdimen=\dimen177
-\scratchbox=\box38
-\nofMPsegments=\count143
-\nofMParguments=\count144
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count145
-\MPscratchDim=\dimen178
-\MPnumerator=\count146
-\makeMPintoPDFobject=\count147
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count143
+\scratchdimen=\dimen179
+\scratchbox=\box39
+\nofMPsegments=\count144
+\nofMParguments=\count145
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count146
+\MPscratchDim=\dimen180
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
+\everyMPtoPDFconversion=\toks45
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -545,7 +554,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box39
+\AtBeginShipoutBox=\box40
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -557,10 +566,15 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) [1
 
 {C:/Users/php16leh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Overview3.pdf, id=12, 473.77pt x 218.56656pt>
+<maprep.pdf, id=12, 391.30345pt x 465.35738pt>
+File: maprep.pdf Graphic file (type pdf)
+ <use maprep.pdf>
+Package pdftex.def Info: maprep.pdf used on input line 167.
+(pdftex.def)             Requested size: 175.17244pt x 208.32246pt.
+ [2 <./maprep.pdf>] <Overview3.pdf, id=32, 473.77pt x 218.56656pt>
 File: Overview3.pdf Graphic file (type pdf)
  <use Overview3.pdf>
-Package pdftex.def Info: Overview3.pdf used on input line 117.
+Package pdftex.def Info: Overview3.pdf used on input line 224.
 (pdftex.def)             Requested size: 473.76884pt x 218.56602pt.
 
 
@@ -570,53 +584,53 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2] [3 <./Overview3.pdf>]
+[3] [4 <./Overview3.pdf>]
 
-Package amsthm Warning: Unknown theoremstyle `problem' on input line 198.
+Package amsthm Warning: Unknown theoremstyle `problem' on input line 305.
 
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 239.
+(amsmath)                 on input line 346.
 
-[4] [5] <TORfig3.pdf, id=110, 845.04686pt x 597.50786pt>
+[5] [6] <TORfig3.pdf, id=125, 845.04686pt x 597.50786pt>
 File: TORfig3.pdf Graphic file (type pdf)
  <use TORfig3.pdf>
-Package pdftex.def Info: TORfig3.pdf used on input line 326.
+Package pdftex.def Info: TORfig3.pdf used on input line 433.
 (pdftex.def)             Requested size: 475.45825pt x 336.1794pt.
 
-[6] [7 <./TORfig3.pdf>]
+[7] [8 <./TORfig3.pdf>]
 
-Package amsthm Warning: Unknown theoremstyle `Lemma' on input line 341.
-
-
-Package amsthm Warning: Unknown theoremstyle `lemma' on input line 372.
-
-[8]
-
-Package amsthm Warning: Unknown theoremstyle `lemma' on input line 410.
+Package amsthm Warning: Unknown theoremstyle `Lemma' on input line 448.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 423.
-
-
-
-LaTeX Font Warning: Command \large invalid in math mode on input line 428.
+Package amsthm Warning: Unknown theoremstyle `lemma' on input line 479.
 
 [9]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 470.
+
+Package amsthm Warning: Unknown theoremstyle `lemma' on input line 517.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 530.
+
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 535.
+
+[10]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 577.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 470.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 577.
 
-<random_benchmark.pdf, id=134, 597.23125pt x 845.1575pt>
+<random_benchmark.pdf, id=149, 597.23125pt x 845.1575pt>
 File: random_benchmark.pdf Graphic file (type pdf)
 
 <use random_benchmark.pdf>
-Package pdftex.def Info: random_benchmark.pdf used on input line 523.
+Package pdftex.def Info: random_benchmark.pdf used on input line 630.
 (pdftex.def)             Requested size: 250.24199pt x 170.34445pt.
 
 
@@ -625,13 +639,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10] (lempelx_paper.bbl [11 <./random_benchmark.pdf>] [12]) [13]
+[11] (lempelx_paper.bbl [12 <./random_benchmark.pdf>] [13]) [14]
 (lempelx_paper.aux) ) 
 Here is how much of TeX's memory you used:
- 9757 strings out of 493334
- 135866 string characters out of 3136663
- 307432 words of memory out of 3000000
- 13101 multiletter control sequences out of 15000+200000
+ 9818 strings out of 493334
+ 136703 string characters out of 3136663
+ 308184 words of memory out of 3000000
+ 13157 multiletter control sequences out of 15000+200000
  17194 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,25n,57p,1505b,1195s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -665,9 +679,9 @@ ic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb>
-Output written on lempelx_paper.pdf (13 pages, 828668 bytes).
+Output written on lempelx_paper.pdf (14 pages, 856764 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
+ 261 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 22 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 27 words of extra memory for PDF output out of 10000 (max. 10000000)
 

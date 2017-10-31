@@ -10,6 +10,11 @@
 \usepackage[braket, qm]{qcircuit}
 %\usepackage[bookmarks = true, pdfpagemode = None, pdfstartview = FitH, colorlinks = true, urlcolor = blue]{hyperref}
 \usepackage{listings}
+\lstset{
+	basicstyle=\small\ttfamily,
+	columns=flexible,
+	breaklines=true
+}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{graphicx}
@@ -35,6 +40,7 @@
 \usepackage{pdfpages}
 %\usepackage{epspdfconversion}
 \usepackage{xcolor,colortbl}
+\usepackage{wrapfig}
 
 \title{Efficient Methods for Multi-Qubit Circuit Optimization}
 \author{Luke Heyfron, and Earl T. Campbell}
@@ -73,7 +79,25 @@
 		
 		All of the near-optimal compilers described in this paper look for inspiration in algorithms for the related 2-tensor problem, which we call the Lempel's algorithm.  We give specific details for a compiler here called TOR (Time Ordered Reduction) that comes in two different flavours (with and without feedback).  The TOR compilers can be considered concrete versions of the approach outlined by Campbell and Howard~\cite{campbell17b}.  Also, proposed in this paper is the TODD (Third Order Duplicate and Destroy) compiler, which is also inspired by Lempel but in a more direct and elegant way than TOR.  In benchmarking, we find that TODD often achieved even lower T count than TOR.  
 		
-	\FloatBarrier		
+	\FloatBarrier
+	
+	\section{Preliminaries}	
+	% Clifford heirarchy, D_3
+	The Pauli group on $n$ qubits $\mathcal{P}^n$ is the set of all $n$-fold tensor products of the single qubit Pauli operators $\{X, Y, Z, \mathbb{I}\}$ with allowed coefficients $\in \{\pm1,\pm i\}$.
+	The Clifford group on $n$ qubits $\mathcal{C}^n$ is the normalizer of $\mathcal{P}^n$.
+	The $k$\textsuperscript{th} level of the \emph{Clifford hierarchy} $\mathcal{C}_k^n$ is defined as follows,
+	\begin{equation}
+	\mathcal{C}_k^n = \{U \mid U\mathcal{P}^n U^\dagger = \mathcal{C}_{k-1}^n\},
+	\end{equation}
+	with recursion terminated by $\mathcal{C}^n_1 = \mathcal{P}^n$.
+	We define $\mathcal{D}_k^n$ to be the diagonal elements of $\mathcal{C}_k^n$. We will sometimes omit the superscript $n$ when the number of qubits is obvious from context.
+	% Gate sets used: Clifford + T, CNOT + T
+	We define the Clifford + $T$ gate set $\mathcal{G}_1 = \{\mathrm{Clifford}, T\}$, where Clifford is any generating set for the Clifford group on $n$ qubits such as $\{CNOT,H,S\}$.
+	We define the \emph{CNOT + T} gate set $\mathcal{G}_2 = \{\mathrm{CNOT}, S, T\}$, where we include $S=T^2$ as a separate gate due to the magic states cost model for gate synthesis \cite{BraKit05}.
+	A circuit decomposition for a unitary $U$ will be denoted $\mathcal{U}$; conversely we say $\mathcal{U}$ implements $U$. We refer to a circuit decomposition $\mathcal{U}\in <\mathcal{G}_2>$ that implements a $U\in \mathcal{D}_3$ as a \emph{diagonal CNOT + $T$} circuit.
+	
+	% Most general circuit optimization problem
+	
 		
 	\section{Workflow Overview}
 		\label{sec_methods}
@@ -103,15 +127,98 @@
 %\subsection{Workflow Overview}
 \label{ssec_workflow}
 
-The high level work-flow of the protocol begins by converting an $n$ qubit input Clifford + $T$ circuit, $C_{\text{in}}$, (see figure \ref{fig_overview}.1) to a CNOT + $T$ circuit plus additional operations that are all Clifford (figure \ref{fig_overview}.2). The purpose of this is to isolate the non-Clifford behaviour within a subcircuit that has properties required for our optimization framework (see section \ref{ssec_diag}). The main obstacle to this conversion process is the presence of Hadamard gates in the original circuit. External Hadamards, found at the beginning and end of the circuit, can be left in place. In order to remove internal Hadamards we use an approach similar to that of \cite{1_Montanaro_2017, 2_Bremner_2010} where a unitary Hadamard gate is replaced with a Hadamard gadget that involves only CNOT + T gates as well as preparation of ancillas in the $\ket{+}$ state and measurement in the Pauli-$X$ basis (see figure \ref{fig_hadamards}). In doing so we are trading internal Hadamards for external Hadamards and space-like overhead.
+%\begin{lstlisting}
+% 0/in) The input
+%	- A circuit decomposition \mathcal{U} \in <G_1>
+%	- A netlist i.e. a list of quantum gate each with the qubits to which they are applied.
+%	- Allowed gates in this group in our implementation are {X,Y,Z,S(^dagger),T,T(^dagger),CZ,CS(^dagger) and CCZ}
+%	- Non-unitary implementations of gates lower down Clifford hierarchy such as generalized Toffoli gate as described in appendix B
 
-Once the Hadamards are removed, we decompose the CNOT + T circuit into two partitions such that one part consists of CNOT gates only and the other is diagonal in the computational basis (figure \ref{fig_overview}.3). Such circuits implement unitaries in the group $\mathcal{D}_3$, the diagonal elements of the third level of the Clifford hierarchy. 
-We then extract the \emph{signature tensor} of the diagonal CNOT + T circuit, which is an object that uniquely characterizes the unitary $U_f$ up to a Clifford factor. 
+% 1) Remove external Hadamards
 
-The core layer of the algorithm, \emph{T-optimiser}, takes as input the signature tensor of the diagonal CNOT + T circuit and outputs a \emph{gate synthesis matrix}, $A$, which represents a particular circuit decomposition for the input unitary. The number of columns of $A$ is equal to the $T$ count of its corresponding circuit, so \emph{T-optimiser} ideally outputs a gate synthesis matrix with minimal column number. It is believed that finding optimal solutions for this problem is NP-hard \cite{3_Amy_2016}, so we must use efficient heuristics that yield near-minimal column number.
+% 2) Clifford + T to CNOT + T mapping
+%	- Replace H gates with gadget in figure \ref{fig_hadamards}
+%	- Pauli X operator commutes through the CNOT+T partitions (reference to new figure)
+
+% 3) Diagonalize CNOT + T circuit
+%	- Action of an arbitrary circuit in G2 on computational basis states is fully described by phase polynomial + l.b.f, however l.b.f's can be implemennted using only CNOTs which is Clifford so it is convenient to focus on only diagonal CNOT + T gates, allowing us to ignore the l.b.f.
+%	- Consequently, we decompose the CNOT + T circuit into a diagonal CNOT + T circuit and a CNOT only circuit that implements the l.b.f
+
+% 4) Determine the `phase function decompositions' of diagonal CNOT + T circuit
+%	- Weighted polynomial
+%	- Phase polynomial
+%	- Signature tensor
+%	- Gate synthesis matrix
+%	- Reference to mappings figure
+%	- Original WP/PP must be stored in order to later apply the Clifford correction that restores U_{POST} to U_{PRE} (due to losing information that contains Clifford behaviour in the WP->ST, PP->GSM mappings)
+
+% 5) Find T-optimal phase function decomposition A
+
+% 6) Map A back to diagonal CNOT + T circuit
+%	- Determine Clifford correction from stored WP/PP
+
+% 7/out) The output
+%\end{lstlisting}
+
+\iffalse We now describe the high level work-flow of our $T$ gate optimization protocol. The Clifford + T gate set is desirable as it forms a universal gate set, however the optimizer acts directly on composed of CNOT and T gates only, so the first step of the protocol is to extract a circuit of the desired gate set from an arbitrary circuit from the Clifford + T gate set. This is done using the Hadamard gadget depicted in figure \ref{fig_hadamards}, which allows us to replace internal Hadamards with an ancilla prepared in the $\ket{+}$ state, upon which we post-select the $\ket{+}$ outcome at the end of execution. \fi
+
+\begin{wrapfigure}{r}{0.35\linewidth}
+	\centering
+	\includegraphics[width=1\linewidth]{maprep}
+	\caption{}
+	\label{fig_maprep}
+\end{wrapfigure}
+
+% in)
+We now describe the high level work-flow of our T gate optimization protocol. We begin by defining the input to be a Clifford + $T$ quantum circuit $\mathcal{U}_{\text{in}}$ represented as a \emph{netlist} i.e. a list of quantum gates along with the associated qubits to which they are applied. The set of allowed quantum gates in our implementation is $\{X, Y, Z, S^{(\dagger)}, T^{(\dagger)}, CZ, CS^{(\dagger)}, CCZ, \mathrm{Toff}_n\footnote{The generalized $n$ qubit Toffoli gate is not exactly synthesizable over the Clifford+$T$ gate set for $n>3$. We use standard ancilla-based non-unitary decompositions of this gate family according to reference \cite{PhysRevA.52.3457}.}\}$.
+
+
+
+% 2)
+The \emph{T-Optimize} step of our protocol makes use of a framework that is valid only for circuits of the CNOT + $T$ gate set, causing Hadamard gates to be an obstacle to this step of the protocol. In step 2, we overcome this by replacing each Hadamard gate with a \emph{Hadamard gadget} depicted on the right-hand-side of figure \ref{fig_hadamards}, which is a circuit in the CNOT + $T$ family augmented by $\ket{+}$ preparation, measurement in the Pauli-$X$ basis and subsequent feed-forward of the measurement result to a classically controlled a Pauli-$X$ gate. After making the initial Hadamard to `Hadamard gadget' substitution, we commute the classically controlled Paul-$X$ (CCX) gates all the way to the end of the circuit starting from the right-most CCX and iteratively working our way left. The end result is a circuit defined on $n+h$ qubits where $h$ is the number of Hadamard gadgets, which consists of a CNOT + $T$ block, followed by a sequence of classical controlled Clifford operators. This method is preferred over that of forming Hadamard-bounded partitions as it allows us to convert the bulk of the input circuit into the optimization-compatible gate set, and we find it leads to better performance of the \emph{T-Optimize} subroutine.
+
+
+
+% 1)
+In fact, we do not need to convert every Hadamard gate into `Hadamard gadgets'. As in previous works \cite{1_Montanaro_2017}, we make a distinction between \emph{internal} and \emph{external} Hadamards, where we define the former to be any Hadamard gate this is located such that there is at least one non-commuting gate acting on the same qubit line immediately before and after it. We define an external Hadamard as any Hadamard that is not an internal Hadamard. In step 1, external Hadamards are detached from the input circuit before gadgetization in step 2 as shown in panels 2 and 3 of figure \ref{fig_overview}. This saves space-like resources as each additional Hadamard gadget requires one additional ancilla qubit, resulting in the number of Hadamard gadgets $h=h_{\text{total}}-h_{\text{external}}$, where $h_{\text{total}}$ and $h_{\text{external}}$ are the total number of Hadamard gates and the number of external Hadamards in $\mathcal{U}_{\text{in}}$, respectively.
+
+ \iffalse Therefore, we wish to map the input circuit $\mathcal{U}_{\text{in}}$ from the generic Clifford + $T$ gate set to a CNOT + $T$ circuit. the first step is to find a subcircuit of $\mathcal{U}_{\text{in}}$ such that no Hadamards appear at the beginning or end of the circuit definition, as in reference \cite{1_Montanaro_2017}. The unitary implemented by this subcircuit $U_1$ would therefore defined such that $U_{\text{in}}=H^{\otimes\mathbf{w}}U_1H^{\otimes\mathbf{v}}$, where $\mathbf{v}, \mathbf{w}\in \mathbb{Z}^n$ and we define $A^{\otimes\mathbf{b}}=\bigotimes_{i=1}^n A^{b_i}$ for some single qubit unitary $A$ and a vector $\mathbf{b}\in\mathbb{Z}_2^n$.
+
+% 2)
+We convert $\mathcal{U}_{\text{in}}$ to a CNOT + $T$ circuit, plus additional operations that are all Clifford (see panels 1 and 2 of figure \ref{fig_overview}). The purpose of this is to isolate the non-Clifford behaviour within a subcircuit that has properties required for our optimization framework (see section \ref{ssec_diag}). The main obstacle to this conversion process is the presence of Hadamard gates in the original circuit. External Hadamards, found at the beginning and end of the circuit, can be left in place. In order to remove internal Hadamards we use an approach similar to that of \cite{1_Montanaro_2017, 2_Bremner_2010} where a unitary Hadamard gate is replaced with a Hadamard gadget that involves only CNOT + T gates as well as preparation of ancillas in the $\ket{+}$ state and measurement in the Pauli-$X$ basis (see figure \ref{fig_hadamards}). In doing so we are trading internal Hadamards for external Hadamards and space-like overhead. \fi
+
+
+
+Once the Hadamards are removed, we have a CNOT + $T$ circuit $\mathcal{U}_{CNOT+T} \in \mathcal{G}_2$ that implements a unitary $U_{CNOT+T}$, whose action on the computational basis is fully described by a so called \emph{phase function}, $f: \mathbb{Z}_2^n \mapsto \mathbb{Z}_8$, and an invertible matrix $E \in \mathbb{Z}_2^{(n,n)}$, such that
+\begin{equation}
+U_{CNOT+T}\ket{\mathbf{x}} = \omega^{f(\mathbf{x})}\ket{E\mathbf{x}} = \omega^{f(\mathbf{x})}\left(\ket{\lambda_1(\mathbf{x})}\otimes\ket{\lambda_2(\mathbf{x})}\otimes\dots\otimes\ket{\lambda_n(\mathbf{x})}\right),
+\end{equation}
+where $\omega = e^{i\frac{\pi}{4}}$ and $\{\lambda_i \}$ are linear Boolean functions, which can be implemented using CNOT gates only. It is convenient to strip away this trivial Clifford behaviour, allowing us to focus on diagonal CNOT + $T$ circuits, which only require the phase function for a full description.
+Hence in step 3, we decompose $\mathcal{U}_{CNOT+T}$ into two partitions: $\mathcal{U}_E \in \langle CNOT \rangle$ that implements the transformation $\ket{\mathbf{x}} \rightarrow \ket{E\mathbf{x}}$, and $\mathcal{U}_f$, a diagonal CNOT + $T$ circuit whose action is given by
+\begin{equation}
+U_f\ket{\mathbf{x}} = \omega^{f(\mathbf{x})}\ket{\mathbf{x}}.
+\end{equation}
+We make use of four different `phase function representations': \emph{phase polynomials} (PP), \emph{weighted polynomials} (WP), \emph{gate synthesis matrices} (GSM) and \emph{signature tensors} (ST), which are mappable to one another, as well as to and from the unitary and circuit descriptions of quantum operators as shown in figure \ref{fig_maprep}. The mathematical description of each representation and some of their mappings will be covered in section \ref{ssec_diag}. For now, we will highlight relative merits of each.
+Phase polynomials map to quantum circuits, where the number of $T$ gates is a known function of the PP coefficients.
+%They also retain the Clifford behaviour of the input unitary, so are more explicit than GSMs.
+There exist many different PPs for the same unitary that in general have different $T$ counts, wherein lies the T optimization problem this paper covers. On the other hand, weighted polynomials have a one-to-one correspondence with the unitary it implements, a property we exploit to check that our optimization methods leave the input unitary invariant. The signature tensor is a streamlined version of the WP that ignores the Clifford behaviour irrelevant for $T$ optimization. Finally, gate synthesis matrices are streamlined versions of PPs, similarly with the Clifford behaviour ignored.
+
+\iffalse The core layer of the algorithm, \emph{T-optimiser}, takes as input the signature tensor of the diagonal CNOT + T circuit and outputs a \emph{gate synthesis matrix}, $A$, which represents a particular circuit decomposition for the input unitary. The number of columns of $A$ is equal to the $T$ count of its corresponding circuit, so \emph{T-optimiser} ideally outputs a gate synthesis matrix with minimal column number. It is believed that finding optimal solutions for this problem is NP-hard \cite{3_Amy_2016}, so we must use efficient heuristics that yield near-minimal column number.
 
 The output $A$ matrix is mapped to a circuit of the same form as $U_f$, with which the original $U_f$ circuit is replaced. The result is an output circuit that implements the full Clifford + $T$ input circuit on the first $n$ qubits and has near optimal $T$ count.
-The following sections detail these steps in turn. New algorithms for the \emph{T-Optimize} subroutine are the main technical contribution of this paper and so are the main focus.
+The following sections detail these steps in turn. New algorithms for the \emph{T-Optimize} subroutine are the main technical contribution of this paper and so are the main focus. \fi
+
+% Commuting qcircuit here
+\iffalse\begin{equation}
+	\centering	
+	\Qcircuit @C=1em @R=1em {
+		\lstick{\ket{\mathbf{x}}} & \gate{U_f} & \gate{H} & \gate{V_f} & \qw & \push{\rule{1em}{0em}} & \rightarrow & \push{\rule{1em}{0em}} & & \gate{U_f} & \sgate{\bigotimes}{1} \\
+		\lstick{\ket{h}=\ket{0}}&&&&&&&&& \qw & \gate{\bigotimes}
+	}	
+\end{equation}\fi
+
+
+
 
 \begin{figure}[h!]		
 			\includegraphics{Overview3}
