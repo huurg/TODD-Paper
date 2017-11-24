@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  7 NOV 2017 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  23 NOV 2017 17:38
 entering extended mode
 **./lempelx_paper.tex
 (lempelx_paper.tex
@@ -433,21 +433,24 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \WF@everypar=\toks43
 Package: wrapfig 2003/01/31  v 3.6
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen179
+)
 (lempelx_paper.aux)
 \openout1 = `lempelx_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -483,16 +486,16 @@ LaTeX Font Info:    ... okay on input line 49.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.39998pt on input line 49.
+Package xypdf Info: Line width: 0.39998pt on input line 51.
 \c@lstlisting=\count142
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -502,13 +505,13 @@ Package caption Info: End \AtBeginDocument code.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count143
-\scratchdimen=\dimen179
+\scratchdimen=\dimen180
 \scratchbox=\box39
 \nofMPsegments=\count144
 \nofMParguments=\count145
 \everyMPshowfont=\toks44
 \MPscratchCnt=\count146
-\MPscratchDim=\dimen180
+\MPscratchDim=\dimen181
 \MPnumerator=\count147
 \makeMPintoPDFobject=\count148
 \everyMPtoPDFconversion=\toks45
@@ -566,150 +569,156 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) [1
 
 {C:/Users/php16leh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Overview3.pdf, id=12, 473.77pt x 218.56656pt>
-File: Overview3.pdf Graphic file (type pdf)
- <use Overview3.pdf>
-Package pdftex.def Info: Overview3.pdf used on input line 141.
-(pdftex.def)             Requested size: 473.76884pt x 218.56602pt.
+<Overview4b.pdf, id=13, 478.28688pt x 243.57701pt>
+File: Overview4b.pdf Graphic file (type pdf)
+ <use Overview4b.pdf>
+Package pdftex.def Info: Overview4b.pdf used on input line 156.
+(pdftex.def)             Requested size: 478.2857pt x 243.5764pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<phaseswap.pdf, id=13, 415.7547pt x 45.40015pt>
+<phaseswap.pdf, id=14, 415.7547pt x 45.40015pt>
 File: phaseswap.pdf Graphic file (type pdf)
  <use phaseswap.pdf>
-Package pdftex.def Info: phaseswap.pdf used on input line 175.
+Package pdftex.def Info: phaseswap.pdf used on input line 190.
 (pdftex.def)             Requested size: 500.484pt x 54.65236pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2] <cc1.pdf, id=24, 193.07433pt x 97.4039pt>
+[2] <cc1.pdf, id=25, 193.07433pt x 97.4039pt>
 File: cc1.pdf Graphic file (type pdf)
  <use cc1.pdf>
-Package pdftex.def Info: cc1.pdf used on input line 188.
+Package pdftex.def Info: cc1.pdf used on input line 203.
 (pdftex.def)             Requested size: 150.14671pt x 75.75179pt.
 
-<cc2b.pdf, id=25, 179.29083pt x 97.4039pt>
+<cc2b.pdf, id=26, 179.29083pt x 97.4039pt>
 File: cc2b.pdf Graphic file (type pdf)
  <use cc2b.pdf>
-Package pdftex.def Info: cc2b.pdf used on input line 188.
+Package pdftex.def Info: cc2b.pdf used on input line 203.
 (pdftex.def)             Requested size: 150.14671pt x 81.57347pt.
 
-<cc3b.pdf, id=26, 179.29083pt x 97.4039pt>
+<cc3b.pdf, id=27, 179.29083pt x 97.4039pt>
 File: cc3b.pdf Graphic file (type pdf)
  <use cc3b.pdf>
-Package pdftex.def Info: cc3b.pdf used on input line 188.
+Package pdftex.def Info: cc3b.pdf used on input line 203.
 (pdftex.def)             Requested size: 150.14671pt x 81.57347pt.
- [3 <./Overview3.pdf> <./phaseswap.pdf
+ [3 <./Overview4b.pdf> <./phaseswap.pdf
 
 pdfTeX warning: pdflatex.exe (file ./phaseswap.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
->] <maprep.pdf, id=185, 391.30345pt x 465.35738pt>
+>] <maprep.pdf, id=187, 391.30345pt x 465.35738pt>
 File: maprep.pdf Graphic file (type pdf)
  <use maprep.pdf>
-Package pdftex.def Info: maprep.pdf used on input line 220.
+Package pdftex.def Info: maprep.pdf used on input line 236.
 (pdftex.def)             Requested size: 200.19054pt x 238.07469pt.
  [4 <./cc1.pdf> <./cc2b.pdf> <./cc3b.pdf> <./maprep.pdf>]
 
-Package amsthm Warning: Unknown theoremstyle `problem' on input line 302.
+LaTeX Warning: Reference `eq_U_f' on page 5 undefined on input line 310.
+
+
+Package amsthm Warning: Unknown theoremstyle `problem' on input line 320.
 
 [5]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 344.
+(amsmath)                 on input line 362.
 
-[6] <TORfig3.pdf, id=245, 845.04686pt x 597.50786pt>
+<TORfig3.pdf, id=244, 845.04686pt x 597.50786pt>
 File: TORfig3.pdf Graphic file (type pdf)
  <use TORfig3.pdf>
-Package pdftex.def Info: TORfig3.pdf used on input line 431.
-(pdftex.def)             Requested size: 475.45825pt x 336.1794pt.
- [7]
-[8 <./TORfig3.pdf>]
+Package pdftex.def Info: TORfig3.pdf used on input line 393.
+(pdftex.def)             Requested size: 350.33727pt x 247.71497pt.
+ [6] [7 <./TORfig3.pdf>]
 
-Package amsthm Warning: Unknown theoremstyle `Lemma' on input line 446.
+Package amsthm Warning: Unknown theoremstyle `Lemma' on input line 461.
+
+[8]
+
+Package amsthm Warning: Unknown theoremstyle `lemma' on input line 492.
 
 
-Package amsthm Warning: Unknown theoremstyle `lemma' on input line 477.
+Package amsthm Warning: Unknown theoremstyle `lemma' on input line 530.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 543.
+
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 548.
 
 [9]
-
-Package amsthm Warning: Unknown theoremstyle `lemma' on input line 515.
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 528.
-
-
-
-LaTeX Font Warning: Command \large invalid in math mode on input line 533.
-
-[10]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 575.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 582.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 575.
-
-<random_benchmark.pdf, id=268, 597.23125pt x 845.1575pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 582.
+ [10]
+<random_benchmark.pdf, id=276, 597.23125pt x 845.1575pt>
 File: random_benchmark.pdf Graphic file (type pdf)
 
 <use random_benchmark.pdf>
-Package pdftex.def Info: random_benchmark.pdf used on input line 628.
-(pdftex.def)             Requested size: 250.24199pt x 170.34445pt.
+Package pdftex.def Info: random_benchmark.pdf used on input line 647.
+(pdftex.def)             Requested size: 235.22807pt x 160.12431pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[11 <./random_benchmark.pdf>] [12]
+Overfull \hbox (31.49268pt too wide) in paragraph at lines 764--768
+\OT1/cmr/m/n/10 We ac-knowl-edge sup-port by the En-gi-neer-ing and Phys-i-cal 
+Sci-ences Re-search Coun-cil (EP-SRC) (Grant No. EP/M024261/1).
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+(lempelx_paper.bbl [13]) [14] [15] [16] (lempelx_paper.aux)
 
-[11] (lempelx_paper.bbl [12 <./random_benchmark.pdf>] [13]) [14]
-(lempelx_paper.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 9745 strings out of 493334
- 136548 string characters out of 3136663
- 279529 words of memory out of 3000000
- 13079 multiletter control sequences out of 15000+200000
- 19097 words of font info for 72 fonts, out of 3000000 for 9000
+ 9764 strings out of 493334
+ 136928 string characters out of 3136663
+ 304791 words of memory out of 3000000
+ 13095 multiletter control sequences out of 15000+200000
+ 19992 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,14n,57p,1564b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-bx8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/symbols/msbm10.pfb>
-Output written on lempelx_paper.pdf (14 pages, 904724 bytes).
+ 40i,14n,57p,1700b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmss8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb>
+Output written on lempelx_paper.pdf (16 pages, 917819 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
+ 386 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  47 words of extra memory for PDF output out of 10000 (max. 10000000)
 

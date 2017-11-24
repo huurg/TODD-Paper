@@ -138,14 +138,6 @@ A.~Lempel, ``Matrix factorization over gf(2) and trace-orthogonal bases of
   gf(2\^{}n),'' \emph{SIAM Journal on Computing}, vol.~4, no.~2, pp. 175--186,
   1975.
 
-\bibitem{PhysRevA.52.3457}
-\BIBentryALTinterwordspacing
-A.~Barenco, C.~H. Bennett, R.~Cleve, D.~P. DiVincenzo, N.~Margolus, P.~Shor,
-  T.~Sleator, J.~A. Smolin, and H.~Weinfurter, ``Elementary gates for quantum
-  computation,'' \emph{Phys. Rev. A}, vol.~52, pp. 3457--3467, Nov 1995.
-  [Online]. Available: \url{https://link.aps.org/doi/10.1103/PhysRevA.52.3457}
-\BIBentrySTDinterwordspacing
-
 \bibitem{1_Montanaro_2017}
 \BIBentryALTinterwordspacing
 A.~Montanaro, ``Quantum circuits and low-degree polynomials over
@@ -153,25 +145,6 @@ A.~Montanaro, ``Quantum circuits and low-degree polynomials over
   Theoretical}, vol.~50, no.~8, p. 084002, 2017. [Online]. Available:
   \url{http://stacks.iop.org/1751-8121/50/i=8/a=084002}
 \BIBentrySTDinterwordspacing
-
-\bibitem{2_Bremner_2010}
-\BIBentryALTinterwordspacing
-M.~J. Bremner, R.~Jozsa, and D.~J. Shepherd, ``Classical simulation of
-  commuting quantum computations implies collapse of the polynomial
-  hierarchy,'' \emph{Proceedings of the Royal Society of London A:
-  Mathematical, Physical and Engineering Sciences}, 2010. [Online]. Available:
-  \url{http://rspa.royalsocietypublishing.org/content/early/2010/08/05/rspa.2010.0301}
-\BIBentrySTDinterwordspacing
-
-\bibitem{3_Amy_2016}
-M.~Amy and M.~Mosca, ``T-count optimization and {Reed}-{Muller} codes,''
-  \emph{arXiv}, vol. arXiv:1601.07363v1 [quant-ph], 2016.
-
-\bibitem{5_Amy_2013}
-M.~Amy, D.~Maslov, M.~Mosca, and M.~Roetteler, ``A meet-in-the-middle algorithm
-  for fast synthesis of depth-optimal quantum circuits,'' \emph{IEEE
-  Transactions on Computer-Aided Design of Integrated Circuits and Systems},
-  vol.~32, no.~6, pp. 818--830, June 2013.
 
 \bibitem{6_Amy_2013}
 M.~Amy, D.~Maslov, and M.~Mosca, ``Polynomial-time {T}-depth optimization of
@@ -184,12 +157,61 @@ E.~T. Campbell and M.~Howard, ``{Unified framework for magic state distillation
   and multiqubit gate synthesis with reduced resource cost},'' \emph{Phys. Rev.
   A}, vol.~95, no. 022316, 2017.
 
+\bibitem{3_Amy_2016}
+M.~Amy and M.~Mosca, ``T-count optimization and {Reed}-{Muller} codes,''
+  \emph{arXiv}, vol. arXiv:1601.07363v1 [quant-ph], 2016.
+
 \bibitem{8_Lempel_1975}
 A.~Lempel, ``Matrix factorization over {GF(2)} and trace-orthogonal bases of
   {GF(2)},'' \emph{SIAM J. Comput.}, vol.~4, no.~2, 1975.
 
-\bibitem{41_soeken}
-M.~Soeken, M.~Roetteler, N.~Wiebe, and G.~D. Micheli, ``Logic synthesis for
-  quantum computing,'' \emph{arXiv preprint}, vol. arXiv:1706.02721, 2017.
+\bibitem{37_Maslov_web}
+D.~Maslov, ``Reversible logic synthesis benchmarks page,''
+  \url{http://webhome.cs.uvic.ca/~dmaslov/}, 2011.
+
+\bibitem{35_Nielsen:2011:QCQ:1972505}
+M.~A. Nielsen and I.~L. Chuang, \emph{Quantum Computation and Quantum
+  Information: 10th Anniversary Edition}, 10th~ed.\hskip 1em plus 0.5em minus
+  0.4em\relax New York, NY, USA: Cambridge University Press, 2011.
+
+\bibitem{2_Bremner_2010}
+\BIBentryALTinterwordspacing
+M.~J. Bremner, R.~Jozsa, and D.~J. Shepherd, ``Classical simulation of
+  commuting quantum computations implies collapse of the polynomial
+  hierarchy,'' \emph{Proceedings of the Royal Society of London A:
+  Mathematical, Physical and Engineering Sciences}, 2010. [Online]. Available:
+  \url{http://rspa.royalsocietypublishing.org/content/early/2010/08/05/rspa.2010.0301}
+\BIBentrySTDinterwordspacing
+
+\bibitem{monty}
+A.~W. Harrow and A.~Montanaro, ``Quantum computational supremacy,''
+  \emph{Nature}, vol. 549, p. 203, 2017.
+
+\bibitem{Shepherd1413}
+\BIBentryALTinterwordspacing
+D.~Shepherd and M.~J. Bremner, ``Temporally unstructured quantum computation,''
+  \emph{Proceedings of the Royal Society of London A: Mathematical, Physical
+  and Engineering Sciences}, vol. 465, no. 2105, pp. 1413--1439, 2009.
+  [Online]. Available:
+  \url{http://rspa.royalsocietypublishing.org/content/465/2105/1413}
+\BIBentrySTDinterwordspacing
+
+\bibitem{raus}
+R.~Raussendorf, J.~Harrington, and K.~Goyal, ``Topological fault-tolerance in
+  cluster state quantum computation,'' \emph{New Journal of Physics}, vol.~9,
+  no.~6, p. 199, 2007.
+
+\bibitem{ogor}
+\BIBentryALTinterwordspacing
+J.~O'Gorman and E.~T. Campbell, ``Quantum computation with realistic
+  magic-state factories,'' \emph{Phys. Rev. A}, vol.~95, p. 032338, Mar 2017.
+  [Online]. Available:
+  \url{https://link.aps.org/doi/10.1103/PhysRevA.95.032338}
+\BIBentrySTDinterwordspacing
+
+\bibitem{fowl}
+A.~G. Fowler, S.~J. Devitt, and C.~Jones, ``Surface code implementation of
+  block code state distillation.'' \emph{Scientific reports}, vol.~3, p. 1939,
+  2013.
 
 \end{thebibliography}
